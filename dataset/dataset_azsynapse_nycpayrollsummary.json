@@ -1,0 +1,21 @@
+{
+	"name": "dataset_azsynapse_nycpayrollsummary",
+	"properties": {
+		"description": "dataset for external table of synapse that is located in staging folder",
+		"linkedServiceName": {
+			"referenceName": "ls_azuresynapsedwh",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "Azure Synapse"
+		},
+		"annotations": [],
+		"type": "AzureSqlDWTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "NYC_Payroll_Summary"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

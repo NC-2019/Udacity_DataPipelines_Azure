@@ -1,0 +1,28 @@
+{
+	"name": "dataset_payrollsummary_staging",
+	"properties": {
+		"description": "to write the summary table",
+		"linkedServiceName": {
+			"referenceName": "ls_adlsgen2_nycpayroll",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "ADLS_Gen2"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "NYCPayrollSummary.csv",
+				"fileSystem": "dirstaging"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

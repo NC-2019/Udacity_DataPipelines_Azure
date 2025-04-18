@@ -1,0 +1,37 @@
+{
+	"name": "dataset_titlemaster",
+	"properties": {
+		"description": "dataset for the latest Payroll Data title master file.",
+		"linkedServiceName": {
+			"referenceName": "ls_adlsgen2_nycpayroll",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "ADLS_Gen2"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "TitleMaster.csv",
+				"fileSystem": "dirpayrollfiles"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "TitleCode",
+				"type": "String"
+			},
+			{
+				"name": "TitleDescription",
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
