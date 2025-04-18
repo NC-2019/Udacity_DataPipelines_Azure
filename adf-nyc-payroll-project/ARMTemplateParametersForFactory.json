@@ -1,0 +1,21 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "adf-nyc-payroll-project"
+		},
+		"ls_adlsgen2_nycpayroll_accountKey": {
+			"value": ""
+		},
+		"ls_azsqldb_connectionString": {
+			"value": ""
+		},
+		"ls_azuresynapsedwh_connectionString": {
+			"value": ""
+		},
+		"ls_adlsgen2_nycpayroll_properties_typeProperties_url": {
+			"value": "https://adlsnycpayrollnishikantc.dfs.core.windows.net/"
+		}
+	}
+}
